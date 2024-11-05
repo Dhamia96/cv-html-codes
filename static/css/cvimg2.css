@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 1.5rem;
+    padding-top: 5px;
+    color: #666;
+}
+
+.content {
+    display: flex;
+    margin-top: 30px;
+    gap: 2rem;
+}
+
+.left-column {
+    /* width: 35%; */
+    max-width: max-content;
+    padding: 0 20px 0 30px;
+    margin: 0 1rem;
+    border-left: 1px solid rgb(184, 183, 183);
+}
+
+.right-column {
+    max-width: max-content;
+    padding-left: 25px;
+}
+
+.contact-info h2,
+.education h2,
+.skills h2,
+.about-me h2,
+.experience h2,
+.achievement h2 {
+    font-size: 1.5rem;
+    margin: 1.25rem 0;
+
+}
+
+.logo {
+    width: 8rem;
+    margin: 2rem 1rem;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 50%;
+    margin: auto;
+    color: #4A608F;
+}
+
+.bar-code {
+    width: 4rem;
+}
+
+img {
+    width: 100%;
+}
+
+.back {
+    text-align: left;
+}
+
+.about-me,
+.achievement {
+    border-bottom: 1px solid;
+}
+
+.contact-info p,
+.education p,
+.skills ul,
+.about-me p,
+.achievement p,
+.experience .job p,
+.experience .job ul {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 1rem;
+    height: max-content;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills ul li {
+    margin-bottom: 10px;
+}
+
+.experience .job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience .job {
+    margin-bottom: 3rem;
+}
+
+.header {
+    padding: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
+
+/* Center the profile picture on smaller screens */
+@media (max-width: 576px) {
+    .profile-pic {
+        text-align: center;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 0 15px;
+    }
+
+    .message {
+        width: 100%;
+    }
+
+}
+
+.contact-info p {
+    word-wrap: break-word;
+    /* يسمح بتقسيم النص الطويل على عدة أسطر */
+    white-space: normal;
+    /* تأكد من أن النص لا يبقى في سطر واحد */
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 760px) {
+    .contact-info p {
+        display: block;
+        /* يضمن أن يتم عرض النص على سطر منفصل */
+    }
+
+    .contact-info p:nth-child(2) {
+        word-break: break-all;
+        /* يسمح بتقسيم البريد الإلكتروني إذا كان طويلاً */
+    }
+
+    .left-column {
+        border-left: none;
+        border-bottom: 1px solid rgb(184, 183, 183);
+    }
+}

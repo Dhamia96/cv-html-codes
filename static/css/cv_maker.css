@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Harmattan:wght@400;500;600;700&family=Vazirmatn:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Harmattan:wght@400;500;600;700&display=swap'); 
+
+:root {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+
+button {
+    cursor: pointer;
+}
+
+.cont {
+    width: 90% !important;
+    margin: 0 auto !important;
+}
+
+.section-heading {
+    font-weight: bold;
+    font-family: 'Almarai', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #37476B;
+}
+
+.btns {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid gray;
+    color: rgb(97, 97, 97);
+}
+
+input {
+    background-color: rgb(241, 241, 241) !important;
+}
+
+.select2-container .select2-selection--single {
+    background-color: rgb(241, 241, 241) !important;
+    text-align: start;
+
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 2px solid gray;
+    background-color: transparent !important;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    text-align: right;
+}
+
+label {
+    color: black !important;
+    font-weight: bold;
+}
+
+i {
+    height: 1rem;
+    width: 1rem;
+}
+
+a:hover {
+    text-decoration: none;
+
+}
+
+.img {
+    height: 12rem;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.btn-light {
+    background-color: rgb(255, 255, 255) !important;
+
+}
+
+.btn-light:hover {
+    background-color: none !important;
+}
+
+.active {
+    display: block;
+}
+
+#card1 {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.card-input {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.card-input::placeholder {
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.04rem;
+}
+
+.card-input:focus {
+    color: rgb(67, 67, 67) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.underline {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 1px;
+    background-color: rgb(45, 44, 44);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+}
+
+.card-input:focus+.underline {
+
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+.card-det {
+    border: 1.4px solid gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 13px;
+}
+
+.col-11 .label {
+    color: rgb(47, 45, 91) !important;
+}
+
+.selectize-input {
+    padding: 6px !important;
+    background-color: rgb(241, 241, 241) !important;
+}
+
+.editor {
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-height: 200px;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: rgb(241, 241, 241);
+
+    font-feature-settings: 'lnum';
+}
+
+.editor-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.toolbar {
+    margin-bottom: 10px;
+}
+
+.format-btn {
+    margin-right: 5px;
+    border: 2px solid transparent;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.format-btn:hover,
+.format-btn.active {
+    border-color: #007bff;
+    border-radius: 4px;
+}
+
+.editor {
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-height: 200px;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+}
+
+/* Basic styling for the skill card container */
+#skillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for each skill card */
+.skill-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Styling for the card header */
+.skill-card .header {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Show the edit button only when needed */
+.skill-card .edit-btn.d-none {
+    display: none;
+}
+
+/* Styling for the card body */
+.skill-card .card-body {
+    margin-top: 10px;
+}
+
+/* Hide the card when not in use */
+.skill-card.d-none {
+    display: none;
+}
+
+/* Add a highlight for the open card */
+.skill-card.open {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Button styling */
+.btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Styling for form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#addSkillBtn {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-plus {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #4A608F;
+    color: #4A608F;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-plus i {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.btn-plus:hover {
+    background-color: #4A608F;
+    text-decoration: none;
+}
+
+.btn-plus:hover a {
+    color: white;
+}
+
+.allbtns {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    flex-wrap: wrap;
+
+}
+
+.add {
+    background-color: #4A608F;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* 
+
+
+.carousel-control-next-icon {
+    background: none;
+}
+
+.carousel {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+   
+}
+
+
+
+*/
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5rem;
+    height: 5rem;
+    color: rgb(255, 255, 255);
+    border: 0;
+    background: transparent;
+
+}
+
+img {
+    width: 100%;
+}
+
+.cv-img {
+    padding: .625rem;
+    border: .1px solid;
+    margin: 5%;
+    cursor: pointer;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.cv-img:hover {
+    transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    -moz-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    -o-transform: scale(1.12);
+    box-shadow: 3px 3px 3px 3px #8888885b;
+}
+
+.left {
+    padding: 3rem;
+    border-right: 1px solid rgb(189, 188, 188);
+}
+
+
+#barcode {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.license {
+    background-color: #f1f1f1;
+   
+}
+
+/* Adjust padding and margins on smaller screens */
+@media (max-width: 576px) {
+    #card2 .card-det {
+        padding: 0 15px;
+    }
+
+    #card2 .form-floating {
+        margin-bottom: 1rem;
+    }
+
+    #card2 .toolbar button {
+        padding: 0.25rem;
+    }
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 3rem;
+}

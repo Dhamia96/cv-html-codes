@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+
+.border {
+    border: 2px solid rgb(96, 96, 96) !important;
+    width: max-content;
+    padding: 5px;
+}
+
+h3,
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.left-section {
+    background-color: #fff;
+    border-right: 2px solid black;
+}
+
+.right-section {
+    background-color: #fff;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 50%;
+    margin: auto;
+    color: #4A608F;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 8rem;
+    margin: 2rem 1rem;
+}
+
+.contact-info,
+.education,
+.skills,
+.languages {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.bar-code {
+    display: flex;
+    justify-content: end;
+}
+
+.bar-code img {
+    width: 2rem;
+}
+
+.contact-info h2,
+.education h3,
+.skills h3,
+.languages h3 {
+    font-size: 18px;
+}
+
+.skills ul,
+.languages p {
+    padding-left: 10px;
+}
+
+.Job-Title {
+    border-bottom: 2px solid black;
+}
+
+@media screen and (min-width:800px) {
+    .row {
+        width: 70%;
+    }
+}

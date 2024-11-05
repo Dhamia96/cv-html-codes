@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جاهزية السيرة الذاتية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../static/css/payment.css">
+</head>
+
+<body dir="rtl">
+    <header class="header">
+        <h1>فائدة للسيرة الذاتية</h1>
+        <h2>سيرتك الذاتية جاهزة!</h2>
+        <p>قم بالدفع للوصول إلى حسابك حيث يمكنك تعديل وتحميل سيرتك الذاتية.</p>
+    </header>
+
+    <div class="container">
+        <div class="benefits-card d-flex flex-column flex-md-row">
+            <div class="benefits ">
+                <h3>المميزات</h3>
+                <ul>
+                    <li>سيتم إنشاء حساب</li>
+                    <li>تعديل سيرتك الذاتية في أي مكان</li>
+                    <li>إنشاء عدد غير محدود من السير الذاتية</li>
+                    <li>الوصول إلى 361,817 وظيفة شاغرة</li>
+                    <li>قوالب احترافية للسيرة الذاتية</li>
+                    <li>إرسال ومتابعة طلبات التوظيف الخاصة بك</li>
+                    <li>تجديد تلقائي بعد 7 أيام</li>
+                    <li>إنشاء خطابات التقديم بسهولة</li>
+                    <li>الإلغاء في أي وقت</li>
+                </ul>
+            </div>
+            <div class="resume-preview">
+                <img src="../static/images/cv2.jpeg" alt="معاينة السيرة الذاتية">
+
+            </div>
+        </div>
+
+        <div class="payment-form">
+            <div class="payment-providers ">
+                <div class="payment-providers__item" id="visa">
+                    <img height="50" src="../static/images/visa.png" alt="Visa" id="visa-button">
+
+                </div>
+                <div class="payment-providers__item ">
+                    <img height="60" src="/static/images/paypal.png" alt="PayPal" id="paypal-button">
+                </div>
+
+            </div>
+
+            <div class="payment-info" id="card-fields">
+                <h4>1.95$ <span class="discount">24.95$</span></h4>
+                <p>يرجى إدخال تفاصيل بطاقتك أدناه لإجراء الدفع.</p>
+                <input type="text" id="cardNumber" placeholder="رقم البطاقة">
+
+                <div class="card-details">
+                    <input type="text" id="expiry" placeholder="MM/YY">
+
+                    <input type="text" id="cvc" placeholder="CVC / CVV">
+
+                </div>
+                <button onclick="processPayment()">ادفع 1.95$</button>
+                <div id="message" style="display: none;"></div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <a href="../templates/cvImg-2.html">مراجعة سيرتك الذاتية</a>
+        <p>بعد الدفع، يمكنك تحميل سيرتك الذاتية على الفور...</p>
+    </footer>
+    <script src="../scripts/js/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/js/payment.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: #f4f4f4;
+}
+
+/* 
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    margin-top: 2.25rem;
+    color: #4A608F;
+} */
+
+.message h3 {
+    font-size: 2.3rem;
+
+}
+
+.logo {
+    width: 6rem;
+    padding: 10px;
+}
+
+
+
+p{
+    font-size: .3rem;
+}
